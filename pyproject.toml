@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "spikify"
+version = "0.1.0"
+description = "迅速提升开发效率的工具包"
+authors = ["seehar <seehar@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
