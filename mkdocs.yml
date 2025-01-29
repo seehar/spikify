@@ -1,0 +1,59 @@
+site_name: Spokify
+
+theme:
+  name: material
+  language: zh
+  features:
+    - search.highlight
+    - navigation.sections
+    - navigation.top
+    - navigation.tabs
+    - navigation.tracking # 锚点导航
+  palette: # 主题模式切换。
+    - media: "(prefers-color-scheme: light)" # 跟随系统主题模式
+      scheme: default
+      primary: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - 简介: index.md
+  - 快速上手: quick_start.md
+
+markdown_extensions:
+- footnotes
+- admonition
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.tabbed
+- pymdownx.caret
+- pymdownx.mark
+- pymdownx.tilde
+- attr_list
+- md_in_html
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+
+repo_url: https://github.com/seehar/spokify
+repo_name: seehar/spokify
+site_url: https://seehar.github.io/spokify/
+
+plugins:
+- search
