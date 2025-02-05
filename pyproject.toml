@@ -7,6 +7,11 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
+loguru = {version = "^0.7.3", optional = true}
+
+
+[tool.poetry.extras]
+log = ["loguru"]
 
 
 [tool.poetry.group.dev.dependencies]
