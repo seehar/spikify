@@ -1,6 +1,7 @@
 import pytest
 
-from spikify.util.singleton_util import SingletonType, AsyncSingletonType
+from spikify.util.singleton_util import AsyncSingletonType
+from spikify.util.singleton_util import SingletonType
 
 
 class TestSingletonType:
