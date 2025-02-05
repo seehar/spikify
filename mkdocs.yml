@@ -28,6 +28,11 @@ theme:
 nav:
   - 简介: index.md
   - 快速上手: quick_start.md
+  - 特性:
+      - manager:
+        - 线程管理器: feature/manager/thread_manager.md
+      - util:
+          - 单例工具类: feature/util/singleton_util.md
 
 markdown_extensions:
 - footnotes
