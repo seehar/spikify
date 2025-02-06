@@ -4,11 +4,29 @@
 
 ## 安装
 
-你可以通过 `pip` 来安装 `Spikify`：
+=== "pip"
+    ```bash
+    # 安装全部功能
+    pip install spikify[all]
 
-```bash
-pip install spikify
-```
+    # 安装单模块功能
+    pip install spikify[log]
+
+    # 安装多模块功能
+    pip install spikify[log,...]
+    ```
+
+=== "poetry"
+    ```bash
+    # 安装全部功能
+    poetry add spikify[all]
+
+    # 安装单模块功能
+    poetry add spikify[log]
+
+    # 安装多模块功能
+    poetry add spikify[log,...]
+    ```
 
 ## 主要特性
 

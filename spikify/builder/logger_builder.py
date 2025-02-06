@@ -1,11 +1,15 @@
-import os
 import sys
 from datetime import timedelta
-from multiprocessing.context import BaseContext
+from typing import TYPE_CHECKING
 from typing import Optional
 from typing import Union
 
 from loguru import logger as loguru_logger
+
+
+if TYPE_CHECKING:
+    import multiprocessing.context
+    import os
 
 
 DEFAULT_FORMAT = (
@@ -53,7 +57,7 @@ class LoggerBuilder:
         backtrace: bool = True,
         diagnose: bool = True,
         enqueue: bool = True,
-        context: Optional[Union[str, BaseContext]] = None,
+        context: Optional[Union[str, "multiprocessing.context.BaseContext"]] = None,
         catch: bool = True,
         rotation: Optional[Union[str, int, timedelta, callable]] = None,
         retention: Optional[Union[str, int, timedelta, callable]] = None,

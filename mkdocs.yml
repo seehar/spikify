@@ -33,6 +33,10 @@ nav:
         - 线程管理器: feature/manager/thread_manager.md
       - util:
           - 单例工具类: feature/util/singleton_util.md
+          - MD5工具类: feature/util/md5_util.md
+          - 字符串工具类: feature/util/string_util.md
+      - builder:
+          - 日志: feature/builder/logger_builder.md
 
 markdown_extensions:
 - footnotes
@@ -55,10 +59,12 @@ markdown_extensions:
     pygments_lang_class: true
 - pymdownx.inlinehilite
 - pymdownx.snippets
+- mdx_truly_sane_lists
 
 repo_url: https://github.com/seehar/spokify
 repo_name: seehar/spokify
 site_url: https://seehar.github.io/spokify/
+site_author: seehar
 
 plugins:
 - search

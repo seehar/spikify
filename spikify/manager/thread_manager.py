@@ -52,11 +52,20 @@ class ThreadManager:
         else:
             self._executor.shutdown(wait=wait)
             if cancel_futures:
-                with self._lock:
-                    for future in self._futures:
-                        future.cancel()
+                self.__cancel_all_future()
+
         with self._lock:
             self._futures.clear()
+
+    def __cancel_all_future(self):
+        """
+        取消所有未完成的任务
+
+        :return:
+        """
+        with self._lock:
+            for future in self._futures:
+                future.cancel()
 
     def all_done(self) -> bool:
         """

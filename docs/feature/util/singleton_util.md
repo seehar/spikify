@@ -12,7 +12,7 @@
 要使某个类成为线程安全的单例类，只需将 `SingletonType` 作为该类的元类即可。
 
 ```python
-from spikify.util.singleton_util import SingletonType
+from spikify import SingletonType
 
 class MySingletonClass(metaclass=SingletonType):
     def __init__(self, value=None):
@@ -30,35 +30,11 @@ print(instance1.value)         # 输出: first
 ### 2. 异步安全的单例模式 (`AsyncSingletonType`)
 `AsyncSingletonType` 是一个元类，用于创建异步安全的单例类。它使用 `asyncio.Lock` 来确保在异步编程环境中只有一个实例被创建。
 
-#### 注意事项
-当前代码中存在一个错误：`AsyncSingletonType` 的实现实际上与 `SingletonType` 相同，使用了 `RLock` 而不是 `asyncio.Lock`，并且没有正确处理异步上下文。以下是修正后的实现：
-
-```python
-from asyncio import Lock
-from threading import RLock
-
-
-class AsyncSingletonType(type):
-    """
-    利用协程锁实现的单例类
-    """
-
-    single_lock = Lock()
-
-    async def __call__(cls, *args, **kwargs):
-        async with AsyncSingletonType.single_lock:
-            if not hasattr(cls, "_instance"):
-                cls._instance = super(AsyncSingletonType, cls).__call__(*args, **kwargs)
-
-        return cls._instance
-```
-
-
 #### 使用方法
 要使某个类成为异步安全的单例类，只需将 `AsyncSingletonType` 作为该类的元类即可。
 
 ```python
-from spikify.util.singleton_util import AsyncSingletonType
+from spikify import AsyncSingletonType
 import asyncio
 
 class MyAsyncSingletonClass(metaclass=AsyncSingletonType):
@@ -66,7 +42,7 @@ class MyAsyncSingletonClass(metaclass=AsyncSingletonType):
         self.value = value
 
 async def create_instance(value):
-    instance = await MyAsyncSingletonClass(value)
+    instance = MyAsyncSingletonClass(value)
     print(f"Instance created with value: {value}")
     return instance
 
@@ -92,7 +68,7 @@ asyncio.run(main())
 ## 示例代码
 ### 线程安全的单例模式示例
 ```python
-from spikify.util.singleton_util import SingletonType
+from spikify import SingletonType
 
 class MySingletonClass(metaclass=SingletonType):
     def __init__(self, value=None):
@@ -109,7 +85,7 @@ print(instance1.value)         # 输出: first
 
 ### 异步安全的单例模式示例
 ```python
-from spikify.util.singleton_util import AsyncSingletonType
+from spikify import AsyncSingletonType
 import asyncio
 
 class MyAsyncSingletonClass(metaclass=AsyncSingletonType):
@@ -117,7 +93,7 @@ class MyAsyncSingletonClass(metaclass=AsyncSingletonType):
         self.value = value
 
 async def create_instance(value):
-    instance = await MyAsyncSingletonClass(value)
+    instance = MyAsyncSingletonClass(value)
     print(f"Instance created with value: {value}")
     return instance
 
@@ -133,7 +109,3 @@ async def main():
 
 asyncio.run(main())
 ```
-
-
-## 总结
-通过 `SingletonType` 和 `AsyncSingletonType`，您可以轻松地在多线程和异步编程环境中实现单例模式，确保类的实例在整个应用程序中唯一。请根据您的应用场景选择合适的单例模式实现。

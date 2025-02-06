@@ -5,7 +5,7 @@
 
 ## 初始化
 ```python
-from thread_manager import ThreadManager
+from spikify import ThreadManager
 
 # 创建一个 ThreadManager 实例，默认最大工作线程数为 2，线程名称前缀为 "ThreadManager"
 thread_manager = ThreadManager(max_workers=2, thread_name_prefix="MyThread")
@@ -77,7 +77,7 @@ thread_manager.set_max_workers(5)
 
 ## 示例代码
 ```python
-from thread_manager import ThreadManager
+from spikify import ThreadManager
 import time
 
 def task(n):
