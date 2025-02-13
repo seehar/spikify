@@ -2,7 +2,7 @@ import sys
 from unittest.mock import MagicMock
 from unittest.mock import patch
 
-from spikify import LoggerBuilder
+from spikify.builder.logger_builder import LoggerBuilder
 
 
 class TestLoggerBuilder:
