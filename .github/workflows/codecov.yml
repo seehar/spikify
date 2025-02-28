@@ -7,7 +7,7 @@ on:
 
 jobs:
   run:
-    timeout-minutes: 10  # 防止无限卡死
+    timeout-minutes: 15  # 防止无限卡死
     runs-on: ubuntu-latest
 
     steps:

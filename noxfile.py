@@ -10,6 +10,8 @@ def pytest(session):
     session.env["POETRY_VIRTUALENVS_CREATE"] = "false"
 
     # session.run_always("poetry", "install", "--no-root", external=True)
-    session.run("poetry", "install", "--all-extras", "--no-root")
+    session.run(
+        "poetry", "install", "--all-extras", "--no-root", "--sync", external=True
+    )
     session.run("poetry", "run", "pytest", "-s", "--forked")
     session.run("poetry", "env", "remove", "--python", session.python, external=True)
