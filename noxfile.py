@@ -12,4 +12,3 @@ def pytest(session):
     session.run_always("poetry", "install", "--all-extras", "--no-root", external=True)
     session.run("poetry", "install", "--all-extras", "--no-root")
     session.run("poetry", "run", "pytest", "-s", "--forked")
-    session.run("poetry", "env", "remove", "--python", session.python, external=True)
