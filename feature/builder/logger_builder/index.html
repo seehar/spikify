@@ -10,13 +10,11 @@
         <meta name="author" content="seehar">
       
       
-        <link rel="canonical" href="https://seehar.github.io/spokify/feature/manager/thread_manager/">
+        <link rel="canonical" href="https://seehar.github.io/spokify/feature/builder/logger_builder/">
       
       
-        <link rel="prev" href="../../../quick_start/">
+        <link rel="prev" href="../../util/string_util/">
       
-      
-        <link rel="next" href="../../util/singleton_util/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -24,7 +22,7 @@
     
     
       
-        <title>线程管理器 - Spokify</title>
+        <title>日志 - Spokify</title>
       
     
     
@@ -76,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#threadmanager" class="md-skip">
+        <a href="#loggerbuilder" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              线程管理器
+              日志
             
           </span>
         </div>
@@ -263,7 +261,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../../manager/thread_manager/" class="md-tabs__link">
           
   
   特性
@@ -408,8 +406,6 @@
                 
   
   
-    
-  
   
   
     
@@ -420,12 +416,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
@@ -439,7 +435,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             manager
@@ -450,30 +446,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    线程管理器
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../manager/thread_manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -482,158 +458,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      简介
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      初始化
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="初始化">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      提交任务
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="提交任务">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      关闭线程池
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="关闭线程池">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      检查任务状态
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      动态调整线程池大小
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="动态调整线程池大小">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      注意事项
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      示例代码
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -762,8 +586,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -772,12 +598,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
@@ -791,7 +617,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             builder
@@ -802,10 +628,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../builder/logger_builder/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    日志
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -814,6 +658,135 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loggerbuilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoggerBuilder
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LoggerBuilder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      简介
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装依赖
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用示例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      方法说明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方法说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init__" class="md-nav__link">
+    <span class="md-ellipsis">
+      __init__()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_sys_stdout" class="md-nav__link">
+    <span class="md-ellipsis">
+      add_sys_stdout
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      add_file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_logger" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_logger()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      日志格式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意事项
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -851,8 +824,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -861,6 +832,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#loggerbuilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoggerBuilder
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LoggerBuilder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       简介
@@ -868,21 +849,66 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      初始化
+      安装依赖
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="初始化">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      参数说明
+      使用示例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      方法说明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方法说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init__" class="md-nav__link">
+    <span class="md-ellipsis">
+      __init__()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_sys_stdout" class="md-nav__link">
+    <span class="md-ellipsis">
+      add_sys_stdout
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      add_file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_logger" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_logger()
     </span>
   </a>
   
@@ -892,103 +918,27 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      提交任务
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="提交任务">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      参数说明
+      日志格式
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      关闭线程池
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="关闭线程池">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      检查任务状态
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      动态调整线程池大小
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="动态调整线程池大小">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       注意事项
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      示例代码
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1010,97 +960,254 @@
   
 
 
-<h1 id="threadmanager">ThreadManager 线程管理器</h1>
-<h2 id="_1">简介</h2>
-<p><code>ThreadManager</code> 是一个用于管理线程池的类，它基于 Python 的 <code>concurrent.futures.ThreadPoolExecutor</code>。该类提供了提交任务、关闭线程池、检查任务状态以及动态调整线程池大小的功能。</p>
-<h2 id="_2">初始化</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">spikify</span><span class="w"> </span><span class="kn">import</span> <span class="n">ThreadManager</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># 创建一个 ThreadManager 实例，默认最大工作线程数为 2，线程名称前缀为 &quot;ThreadManager&quot;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">thread_manager</span> <span class="o">=</span> <span class="n">ThreadManager</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">thread_name_prefix</span><span class="o">=</span><span class="s2">&quot;MyThread&quot;</span><span class="p">)</span>
+  <h1>日志</h1>
+
+<h3 id="loggerbuilder">LoggerBuilder</h3>
+<h4 id="_1">简介</h4>
+<p><code>LoggerBuilder</code> 是一个用于配置和构建日志记录器的工具类，基于 <code>loguru</code>
+库。它提供了链式调用的方法来添加不同的日志输出目标（如标准输出、文件等），并最终获取一个配置好的日志记录器实例。</p>
+<h4 id="_2">安装依赖</h4>
+<p>确保你已经安装了 <code>loguru</code> 库，可以通过以下命令安装：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>loguru
 </span></code></pre></div>
-<h3 id="_3">参数说明</h3>
+<h4 id="_3">使用示例</h4>
+<p>以下是一个简单的使用示例，展示了如何配置并获取一个日志记录器实例：</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">spikify.builder.logger_builder</span><span class="w"> </span><span class="kn">import</span> <span class="n">LoggerBuilder</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">logger</span> <span class="o">=</span> <span class="p">(</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">LoggerBuilder</span><span class="p">()</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="o">.</span><span class="n">add_sys_stdout</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="s2">&quot;DEBUG&quot;</span><span class="p">)</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="o">.</span><span class="n">add_file</span><span class="p">(</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        <span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;app.log&quot;</span><span class="p">,</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="n">level</span><span class="o">=</span><span class="s2">&quot;INFO&quot;</span><span class="p">,</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        <span class="n">rotation</span><span class="o">=</span><span class="s2">&quot;10 MB&quot;</span><span class="p">,</span>  <span class="c1"># 日志文件大小超过 10MB 时轮转</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        <span class="n">retention</span><span class="o">=</span><span class="s2">&quot;7 days&quot;</span><span class="p">,</span>  <span class="c1"># 保留最近 7 天的日志文件</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="n">compression</span><span class="o">=</span><span class="s2">&quot;zip&quot;</span><span class="p">,</span>  <span class="c1"># 压缩旧的日志文件</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="p">)</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="o">.</span><span class="n">get_logger</span><span class="p">()</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">)</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="c1"># 使用日志记录器记录日志</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;这是一个调试信息&quot;</span><span class="p">)</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;这是一个普通信息&quot;</span><span class="p">)</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;这是一个警告信息&quot;</span><span class="p">)</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;这是一个错误信息&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="_4">方法说明</h4>
+<h5 id="__init__"><code>__init__()</code></h5>
 <ul>
-<li><code>max_workers</code>: 线程池中最大工作线程数，默认值为 2。</li>
-<li><code>thread_name_prefix</code>: 线程名称的前缀，默认值为 "ThreadManager"。</li>
+<li><strong>描述</strong>: 初始化 <code>LoggerBuilder</code> 实例，并移除默认的日志处理器。</li>
+<li><strong>返回值</strong>: 无</li>
 </ul>
-<h2 id="_4">提交任务</h2>
-<p>使用 <code>submit</code> 方法可以将任务提交到线程池中执行。该方法返回一个 <code>Future</code> 对象，可以通过该对象获取任务的执行结果或状态。</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">my_task</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">):</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Task running with args: </span><span class="si">{</span><span class="n">arg1</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">arg2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">return</span> <span class="n">arg1</span> <span class="o">+</span> <span class="n">arg2</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">future</span> <span class="o">=</span> <span class="n">thread_manager</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="n">my_task</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># 获取任务结果</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">result</span> <span class="o">=</span> <span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Task result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="_5">参数说明</h3>
+<h5 id="add_sys_stdout"><code>add_sys_stdout</code></h5>
 <ul>
-<li><code>task</code>: 要执行的任务，必须是一个可调用对象。</li>
-<li><code>*args</code>: 传递给任务的位置参数。</li>
-<li><code>**kwargs</code>: 传递给任务的关键字参数。</li>
+<li><strong>描述</strong>: 添加系统标准输出作为日志输出目标。</li>
+<li><strong>参数</strong>:</li>
 </ul>
-<h2 id="_6">关闭线程池</h2>
-<p>使用 <code>shutdown</code> 方法可以关闭线程池，并可以选择是否等待所有任务完成或取消未完成的任务。</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">thread_manager</span><span class="o">.</span><span class="n">shutdown</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cancel_futures</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="_7">参数说明</h3>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>level</code></td>
+<td><code>str</code> 或 <code>int</code></td>
+<td><code>"DEBUG"</code></td>
+<td>日志级别</td>
+</tr>
+<tr>
+<td><code>log_format</code></td>
+<td><code>str</code> 或 <code>callable</code></td>
+<td><code>DEFAULT_FORMAT</code></td>
+<td>日志格式</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li><code>wait</code>: 如果为 <code>True</code>，则等待所有任务完成后再关闭线程池；如果为 <code>False</code>，则立即关闭线程池。</li>
-<li><code>cancel_futures</code>: 如果为 <code>True</code>，则取消所有未完成的任务。</li>
+<li><strong>返回值</strong>: 当前 <code>LoggerBuilder</code> 实例，支持链式调用。</li>
 </ul>
-<h2 id="_8">检查任务状态</h2>
-<p>使用 <code>all_done</code> 方法可以检查所有任务是否已完成。</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">if</span> <span class="n">thread_manager</span><span class="o">.</span><span class="n">all_done</span><span class="p">():</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All tasks are done.&quot;</span><span class="p">)</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">else</span><span class="p">:</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Some tasks are still running.&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h2 id="_9">动态调整线程池大小</h2>
-<p>使用 <code>set_max_workers</code> 方法可以动态设置线程池的最大工作线程数。</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">thread_manager</span><span class="o">.</span><span class="n">set_max_workers</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="_10">参数说明</h3>
+<h5 id="add_file"><code>add_file</code></h5>
 <ul>
-<li><code>max_workers</code>: 新的最大工作线程数。必须大于 0。</li>
+<li><strong>描述</strong>: 添加文件作为日志输出目标。</li>
+<li><strong>参数</strong>:</li>
 </ul>
-<h2 id="_11">注意事项</h2>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>file_path</code></td>
+<td><code>str</code> 或 <code>os.PathLike</code></td>
+<td>必填</td>
+<td>文件路径</td>
+</tr>
+<tr>
+<td><code>level</code></td>
+<td><code>str</code> 或 <code>int</code></td>
+<td><code>"DEBUG"</code></td>
+<td>日志级别</td>
+</tr>
+<tr>
+<td><code>log_format</code></td>
+<td><code>str</code> 或 <code>callable</code></td>
+<td><code>DEFAULT_FORMAT</code></td>
+<td>日志格式</td>
+</tr>
+<tr>
+<td><code>log_filter</code></td>
+<td><code>str</code> 或 <code>callable</code></td>
+<td><code>None</code></td>
+<td>日志过滤器</td>
+</tr>
+<tr>
+<td><code>colorize</code></td>
+<td><code>bool</code></td>
+<td><code>False</code></td>
+<td>是否对输出进行颜色化</td>
+</tr>
+<tr>
+<td><code>serialize</code></td>
+<td><code>bool</code></td>
+<td><code>False</code></td>
+<td>是否序列化日志记录</td>
+</tr>
+<tr>
+<td><code>backtrace</code></td>
+<td><code>bool</code></td>
+<td><code>True</code></td>
+<td>是否包含完整的回溯信息</td>
+</tr>
+<tr>
+<td><code>diagnose</code></td>
+<td><code>bool</code></td>
+<td><code>True</code></td>
+<td>是否包含诊断信息</td>
+</tr>
+<tr>
+<td><code>enqueue</code></td>
+<td><code>bool</code></td>
+<td><code>True</code></td>
+<td>是否将日志记录放入队列</td>
+</tr>
+<tr>
+<td><code>context</code></td>
+<td><code>str</code> 或 <code>multiprocessing.context.BaseContext</code></td>
+<td><code>None</code></td>
+<td>多进程上下文</td>
+</tr>
+<tr>
+<td><code>catch</code></td>
+<td><code>bool</code></td>
+<td><code>True</code></td>
+<td>是否捕获异常</td>
+</tr>
+<tr>
+<td><code>rotation</code></td>
+<td><code>str</code>, <code>int</code>, <code>timedelta</code>, 或 <code>callable</code></td>
+<td><code>None</code></td>
+<td>日志文件轮转策略</td>
+</tr>
+<tr>
+<td><code>retention</code></td>
+<td><code>str</code>, <code>int</code>, <code>timedelta</code>, 或 <code>callable</code></td>
+<td><code>None</code></td>
+<td>日志文件保留策略</td>
+</tr>
+<tr>
+<td><code>compression</code></td>
+<td><code>str</code> 或 <code>callable</code></td>
+<td><code>None</code></td>
+<td>日志文件压缩策略</td>
+</tr>
+<tr>
+<td><code>delay</code></td>
+<td><code>bool</code></td>
+<td><code>False</code></td>
+<td>是否延迟打开文件</td>
+</tr>
+<tr>
+<td><code>watch</code></td>
+<td><code>bool</code></td>
+<td><code>False</code></td>
+<td>是否监视文件变化</td>
+</tr>
+<tr>
+<td><code>mode</code></td>
+<td><code>str</code></td>
+<td><code>"a"</code></td>
+<td>文件打开模式</td>
+</tr>
+<tr>
+<td><code>buffering</code></td>
+<td><code>int</code></td>
+<td><code>1</code></td>
+<td>缓冲大小</td>
+</tr>
+<tr>
+<td><code>encoding</code></td>
+<td><code>str</code></td>
+<td><code>"utf-8"</code></td>
+<td>文件编码</td>
+</tr>
+<tr>
+<td><code>errors</code></td>
+<td><code>str</code></td>
+<td><code>None</code></td>
+<td>编码错误处理方式</td>
+</tr>
+<tr>
+<td><code>newline</code></td>
+<td><code>str</code></td>
+<td><code>None</code></td>
+<td>行结束符</td>
+</tr>
+<tr>
+<td><code>closefd</code></td>
+<td><code>bool</code></td>
+<td><code>True</code></td>
+<td>是否关闭文件描述符</td>
+</tr>
+<tr>
+<td><code>opener</code></td>
+<td><code>callable</code></td>
+<td><code>None</code></td>
+<td>自定义打开文件的函数</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li>在 Python 3.9 及以上版本中，<code>shutdown</code> 方法支持 <code>cancel_futures</code> 参数；在较低版本中，该参数会被忽略。</li>
-<li><code>set_max_workers</code> 方法会直接修改线程池的最大工作线程数，并根据需要调整线程数量。</li>
+<li><strong>返回值</strong>: 当前 <code>LoggerBuilder</code> 实例，支持链式调用。</li>
 </ul>
-<h2 id="_12">示例代码</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">spikify</span><span class="w"> </span><span class="kn">import</span> <span class="n">ThreadManager</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">task</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Task </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> completed&quot;</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c1"># 创建 ThreadManager 实例</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="n">tm</span> <span class="o">=</span> <span class="n">ThreadManager</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1"># 提交多个任务</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="n">futures</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    <span class="n">futures</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tm</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">i</span><span class="p">))</span>
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="c1"># 获取任务结果</span>
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="k">for</span> <span class="n">future</span> <span class="ow">in</span> <span class="n">futures</span><span class="p">:</span>
-</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">())</span>
-</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>
-</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="c1"># 关闭线程池</span>
-</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="n">tm</span><span class="o">.</span><span class="n">shutdown</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
-</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="c1"># 检查所有任务是否完成</span>
-</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="k">if</span> <span class="n">tm</span><span class="o">.</span><span class="n">all_done</span><span class="p">():</span>
-</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All tasks are done.&quot;</span><span class="p">)</span>
-</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>
-</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="c1"># 动态调整线程池大小</span>
-</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="n">tm</span><span class="o">.</span><span class="n">set_max_workers</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<h5 id="get_logger"><code>get_logger()</code></h5>
+<ul>
+<li><strong>描述</strong>: 获取配置好的日志记录器。</li>
+<li><strong>返回值</strong>: 配置好的日志记录器实例。</li>
+</ul>
+<h4 id="_5">日志格式</h4>
+<p>默认的日志格式如下：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>&lt;green&gt;{time:YYYY-MM-DD HH:mm:ss.SSS}&lt;/green&gt; | {process.name} | {thread.name}
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>| &lt;cyan&gt;{module}&lt;/cyan&gt;.&lt;cyan&gt;{function}&lt;/cyan&gt;:&lt;cyan&gt;{line}&lt;/cyan&gt;
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>| &lt;level&gt;{level}&lt;/level&gt;: &lt;level&gt;{message}&lt;/level&gt;
 </span></code></pre></div>
+<p>你可以根据需要自定义日志格式，传递给 <code>log_format</code> 参数。</p>
+<h4 id="_6">注意事项</h4>
+<ul>
+<li><code>loguru</code> 的日志记录器是全局唯一的，因此 <code>LoggerBuilder</code> 实际上是对 <code>loguru.logger</code> 的封装。</li>
+<li>如果你需要在多进程中使用日志记录器，请确保正确配置 <code>enqueue</code> 和 <code>context</code> 参数。</li>
+<li>日志文件的轮转和保留策略可以帮助你管理日志文件的大小和生命周期，避免日志文件过大或过多。</li>
+</ul>
+<p>希望这份文档能帮助你更好地理解和使用 <code>LoggerBuilder</code>。如果有任何问题或建议，请随时联系开发团队。</p>
 
 
 

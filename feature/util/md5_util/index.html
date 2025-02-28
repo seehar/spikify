@@ -10,13 +10,13 @@
         <meta name="author" content="seehar">
       
       
-        <link rel="canonical" href="https://seehar.github.io/spokify/feature/manager/thread_manager/">
+        <link rel="canonical" href="https://seehar.github.io/spokify/feature/util/md5_util/">
       
       
-        <link rel="prev" href="../../../quick_start/">
+        <link rel="prev" href="../singleton_util/">
       
       
-        <link rel="next" href="../../util/singleton_util/">
+        <link rel="next" href="../string_util/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>线程管理器 - Spokify</title>
+        <title>MD5工具类 - Spokify</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#threadmanager" class="md-skip">
+        <a href="#md5util" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              线程管理器
+              MD5工具类
             
           </span>
         </div>
@@ -263,7 +263,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../../manager/thread_manager/" class="md-tabs__link">
           
   
   特性
@@ -408,8 +408,6 @@
                 
   
   
-    
-  
   
   
     
@@ -420,12 +418,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
@@ -439,7 +437,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             manager
@@ -450,30 +448,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    线程管理器
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../manager/thread_manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -482,158 +460,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      简介
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      初始化
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="初始化">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      提交任务
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="提交任务">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      关闭线程池
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="关闭线程池">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      检查任务状态
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      动态调整线程池大小
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="动态调整线程池大小">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      注意事项
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      示例代码
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -651,8 +477,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -661,12 +489,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
@@ -680,7 +508,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             util
@@ -694,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/singleton_util/" class="md-nav__link">
+      <a href="../singleton_util/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -712,10 +540,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../util/md5_util/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MD5工具类
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -724,6 +570,126 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#md5util" class="md-nav__link">
+    <span class="md-ellipsis">
+      MD5Util
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MD5Util">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      简介
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装依赖
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用示例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      方法说明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方法说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from_str" class="md-nav__link">
+    <span class="md-ellipsis">
+      from_str
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from_dict" class="md-nav__link">
+    <span class="md-ellipsis">
+      from_dict
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例输出
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意事项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      扩展功能
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -736,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/string_util/" class="md-nav__link">
+      <a href="../string_util/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -851,8 +817,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -861,6 +825,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#md5util" class="md-nav__link">
+    <span class="md-ellipsis">
+      MD5Util
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MD5Util">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       简介
@@ -868,21 +842,48 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      初始化
+      安装依赖
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="初始化">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      参数说明
+      使用示例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      方法说明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方法说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from_str" class="md-nav__link">
+    <span class="md-ellipsis">
+      from_str
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from_dict" class="md-nav__link">
+    <span class="md-ellipsis">
+      from_dict
     </span>
   </a>
   
@@ -892,103 +893,36 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      提交任务
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="提交任务">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      参数说明
+      示例输出
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      关闭线程池
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="关闭线程池">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      检查任务状态
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      动态调整线程池大小
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="动态调整线程池大小">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       注意事项
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      示例代码
+      扩展功能
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1010,97 +944,65 @@
   
 
 
-<h1 id="threadmanager">ThreadManager 线程管理器</h1>
-<h2 id="_1">简介</h2>
-<p><code>ThreadManager</code> 是一个用于管理线程池的类，它基于 Python 的 <code>concurrent.futures.ThreadPoolExecutor</code>。该类提供了提交任务、关闭线程池、检查任务状态以及动态调整线程池大小的功能。</p>
-<h2 id="_2">初始化</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">spikify</span><span class="w"> </span><span class="kn">import</span> <span class="n">ThreadManager</span>
+  <h1>MD5工具类</h1>
+
+<h3 id="md5util">MD5Util</h3>
+<h4 id="_1">简介</h4>
+<p><code>MD5Util</code> 是一个用于生成 MD5 哈希值的工具类，支持从字符串和字典生成哈希值。它使用 Python 内置的 <code>hashlib</code> 库来计算 MD5 哈希，并且对于字典类型的数据，通过 <code>json.dumps</code> 方法将其序列化为字符串后再进行哈希计算。</p>
+<h4 id="_2">安装依赖</h4>
+<p><code>MD5Util</code> 依赖于 Python 标准库中的 <code>hashlib</code> 和 <code>json</code> 模块，因此无需额外安装依赖包。</p>
+<h4 id="_3">使用示例</h4>
+<p>以下是一些简单的使用示例，展示了如何使用 <code>MD5Util</code> 类生成 MD5 哈希值：</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">spikify.util.md5_util</span><span class="w"> </span><span class="kn">import</span> <span class="n">MD5Util</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># 创建一个 ThreadManager 实例，默认最大工作线程数为 2，线程名称前缀为 &quot;ThreadManager&quot;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">thread_manager</span> <span class="o">=</span> <span class="n">ThreadManager</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">thread_name_prefix</span><span class="o">=</span><span class="s2">&quot;MyThread&quot;</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># 从字符串生成 MD5 哈希值</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">md5_hash_str</span> <span class="o">=</span> <span class="n">MD5Util</span><span class="o">.</span><span class="n">from_str</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;字符串 &#39;</span><span class="si">{</span><span class="n">string</span><span class="si">}</span><span class="s2">&#39; 的 MD5 哈希值: </span><span class="si">{</span><span class="n">md5_hash_str</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># 从字典生成 MD5 哈希值</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">dict_data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;New York&quot;</span><span class="p">}</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">md5_hash_dict</span> <span class="o">=</span> <span class="n">MD5Util</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">dict_data</span><span class="p">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;字典 </span><span class="si">{</span><span class="n">dict_data</span><span class="si">}</span><span class="s2"> 的 MD5 哈希值: </span><span class="si">{</span><span class="n">md5_hash_dict</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<h3 id="_3">参数说明</h3>
+<h4 id="_4">方法说明</h4>
+<h5 id="from_str"><code>from_str</code></h5>
 <ul>
-<li><code>max_workers</code>: 线程池中最大工作线程数，默认值为 2。</li>
-<li><code>thread_name_prefix</code>: 线程名称的前缀，默认值为 "ThreadManager"。</li>
+<li><strong>描述</strong>: 生成给定字符串的 MD5 哈希值。</li>
+<li><strong>参数</strong>:<ul>
+<li><code>string</code>: 需要生成 MD5 哈希值的原始字符串。</li>
 </ul>
-<h2 id="_4">提交任务</h2>
-<p>使用 <code>submit</code> 方法可以将任务提交到线程池中执行。该方法返回一个 <code>Future</code> 对象，可以通过该对象获取任务的执行结果或状态。</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">my_task</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">):</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Task running with args: </span><span class="si">{</span><span class="n">arg1</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">arg2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">return</span> <span class="n">arg1</span> <span class="o">+</span> <span class="n">arg2</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">future</span> <span class="o">=</span> <span class="n">thread_manager</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="n">my_task</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># 获取任务结果</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">result</span> <span class="o">=</span> <span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Task result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="_5">参数说明</h3>
+</li>
+<li><strong>返回值</strong>: 字符串的 MD5 哈希值（十六进制表示的字符串）。</li>
+</ul>
+<h5 id="from_dict"><code>from_dict</code></h5>
 <ul>
-<li><code>task</code>: 要执行的任务，必须是一个可调用对象。</li>
-<li><code>*args</code>: 传递给任务的位置参数。</li>
-<li><code>**kwargs</code>: 传递给任务的关键字参数。</li>
+<li><strong>描述</strong>: 生成给定字典的 MD5 哈希值。</li>
+<li><strong>参数</strong>:<ul>
+<li><code>dict_data</code>: 需要生成 MD5 哈希值的字典数据。</li>
 </ul>
-<h2 id="_6">关闭线程池</h2>
-<p>使用 <code>shutdown</code> 方法可以关闭线程池，并可以选择是否等待所有任务完成或取消未完成的任务。</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">thread_manager</span><span class="o">.</span><span class="n">shutdown</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cancel_futures</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="_7">参数说明</h3>
+</li>
+<li><strong>返回值</strong>: 字典数据的 MD5 哈希值（十六进制表示的字符串）。</li>
+<li><strong>注意事项</strong>: <ul>
+<li>如果字典为空，则返回空字符串的 MD5 哈希值。</li>
+<li>字典会被转换为 JSON 字符串（按键排序），以确保生成的哈希值是确定性的。</li>
+</ul>
+</li>
+</ul>
+<h4 id="_5">示例输出</h4>
+<p>假设你运行了上述示例代码，输出可能如下所示：
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>字符串 &#39;Hello, World!&#39; 的 MD5 哈希值: 65a8e27d8879283831b664bd8b7f0ad4
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>字典 {&#39;name&#39;: &#39;Alice&#39;, &#39;age&#39;: 30, &#39;city&#39;: &#39;New York&#39;} 的 MD5 哈希值: 8cb4c3c6f8a7e5e4d7adeb5e8c5e4d8f
+</span></code></pre></div></p>
+<h4 id="_6">注意事项</h4>
 <ul>
-<li><code>wait</code>: 如果为 <code>True</code>，则等待所有任务完成后再关闭线程池；如果为 <code>False</code>，则立即关闭线程池。</li>
-<li><code>cancel_futures</code>: 如果为 <code>True</code>，则取消所有未完成的任务。</li>
+<li><strong>字符编码</strong>: <code>from_str</code> 方法中，字符串会使用 UTF-8 编码后进行哈希计算。</li>
+<li><strong>字典顺序</strong>: <code>from_dict</code> 方法中，字典会按键排序后转换为 JSON 字符串，以确保生成的哈希值是唯一的。</li>
+<li><strong>空字典处理</strong>: 如果传入的字典为空，<code>from_dict</code> 方法会返回空字符串的 MD5 哈希值。</li>
 </ul>
-<h2 id="_8">检查任务状态</h2>
-<p>使用 <code>all_done</code> 方法可以检查所有任务是否已完成。</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">if</span> <span class="n">thread_manager</span><span class="o">.</span><span class="n">all_done</span><span class="p">():</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All tasks are done.&quot;</span><span class="p">)</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">else</span><span class="p">:</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Some tasks are still running.&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h2 id="_9">动态调整线程池大小</h2>
-<p>使用 <code>set_max_workers</code> 方法可以动态设置线程池的最大工作线程数。</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">thread_manager</span><span class="o">.</span><span class="n">set_max_workers</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="_10">参数说明</h3>
-<ul>
-<li><code>max_workers</code>: 新的最大工作线程数。必须大于 0。</li>
-</ul>
-<h2 id="_11">注意事项</h2>
-<ul>
-<li>在 Python 3.9 及以上版本中，<code>shutdown</code> 方法支持 <code>cancel_futures</code> 参数；在较低版本中，该参数会被忽略。</li>
-<li><code>set_max_workers</code> 方法会直接修改线程池的最大工作线程数，并根据需要调整线程数量。</li>
-</ul>
-<h2 id="_12">示例代码</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">spikify</span><span class="w"> </span><span class="kn">import</span> <span class="n">ThreadManager</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">task</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Task </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> completed&quot;</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c1"># 创建 ThreadManager 实例</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="n">tm</span> <span class="o">=</span> <span class="n">ThreadManager</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1"># 提交多个任务</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="n">futures</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    <span class="n">futures</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tm</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="n">i</span><span class="p">))</span>
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="c1"># 获取任务结果</span>
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="k">for</span> <span class="n">future</span> <span class="ow">in</span> <span class="n">futures</span><span class="p">:</span>
-</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">())</span>
-</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>
-</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="c1"># 关闭线程池</span>
-</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="n">tm</span><span class="o">.</span><span class="n">shutdown</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
-</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="c1"># 检查所有任务是否完成</span>
-</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="k">if</span> <span class="n">tm</span><span class="o">.</span><span class="n">all_done</span><span class="p">():</span>
-</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All tasks are done.&quot;</span><span class="p">)</span>
-</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>
-</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="c1"># 动态调整线程池大小</span>
-</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="n">tm</span><span class="o">.</span><span class="n">set_max_workers</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</span></code></pre></div>
+<h4 id="_7">扩展功能</h4>
+<p>如果你需要对其他类型的数据生成 MD5 哈希值，可以考虑扩展 <code>MD5Util</code> 类，添加新的静态方法来处理这些数据类型。例如，可以添加一个方法来处理列表或元组类型的输入。</p>
+<p>希望这份文档能帮助你更好地理解和使用 <code>MD5Util</code>。如果有任何问题或建议，请随时联系开发团队。</p>
 
 
 
